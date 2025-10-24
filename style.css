@@ -50,6 +50,35 @@ body{
     /* Navbar */
     .navbar{ display:flex; align-items:center; gap:12px; padding:14px 18px; position:sticky; top:0; z-index:40; background:linear-gradient(180deg,var(--glass), rgba(255,255,255,0.85)); backdrop-filter: blur(6px); box-shadow: 0 2px 10px rgba(11,19,38,0.03); }
     .name-container{ display:flex; flex-direction:column; gap:4px; }
+ 
+
+
+
+    /* Add image (fatibasi.jpg) next to name */
+.name-container {
+    display: flex;
+    align-items: flex-start; /* aligns image + text to the top */
+    gap: 12px;
+}
+
+
+.name-container .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 90%; /* makes it round — change to 8px if you want square */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.name-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+
     .name{ font-weight:700; color:var(--brand); font-size:18px; }
     .name.small{ font-weight:600; color:var(--muted); font-size:12px; }
 
