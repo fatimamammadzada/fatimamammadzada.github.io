@@ -193,3 +193,56 @@ body{
     box-shadow: none;
     background: rgba(0,31,95,0.95); /* slightly darker, near-opaque on hover */
 }
+
+/* PROJECTS GRID LAYOUT */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.project-card {
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(11,19,38,0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    cursor: default; /* change to pointer if you make them clickable */
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(11,19,38,0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #dbe1ef; /* nice fallback if image missing */
+}
+
+.project-card-body {
+    padding: 14px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-card-body h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand);
+    line-height: 1.3;
+}
+
+.project-card-body p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--muted);
+}
