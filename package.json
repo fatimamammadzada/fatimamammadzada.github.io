@@ -1,0 +1,10 @@
+{
+  "name": "emin-web",
+  "version": "1.0.0",
+  "description": "Simple dev server to serve test.html",
+  "scripts": {
+    "start": "npx http-server ./ -p 8000 -c-1"
+  },
+  "author": "",
+  "license": "MIT"
+}
